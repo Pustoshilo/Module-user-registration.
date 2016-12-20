@@ -4,8 +4,9 @@ Module user registration.  demonstration project, allows you to record, monitor 
 User Attributes: email, password, role.
 When user authentication is used "random salt", which is stored in the database and "local salt" of the application.
 
-link users table to a table of roles implemented through hibernate-annotations @ManyToOne
-Used 2-level-cache (ehcache).
+link users table to a table of roles implemented through hibernate-annotations @ManyToOne,
+
+used 2-level-cache (ehcache).
 
 As the controller is used spring mvc, ideas manager - Tiles, uses automatic form validation.
 
