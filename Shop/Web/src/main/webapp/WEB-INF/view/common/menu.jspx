@@ -1,0 +1,28 @@
+<jsp:root xmlns="http://www.w3.org/1999/xhtml"
+          xmlns:jsp="http://java.sun.com/JSP/Page"
+          xmlns:c="http://java.sun.com/jsp/jstl/core"
+          xmlns:sec="http://www.springframework.org/security/tags"
+          xmlns:fmt="http://java.sun.com/jsp/jstl/fmt"
+          version="2.0">
+
+
+    <div class="menu">
+                      <ul>
+                    <c:choose>
+                        <c:when test="${sessionInfo.logged}">
+                            <li><a href="/welcome"><fmt:message key="pages.menu.main" bundle="${rc}"/></a>  </li>
+                            <li><a href="/user/getAll"><fmt:message key="pages.menu.allusers"  bundle="${rc}"/></a></li>
+                            <li><a href="/user/logout"><fmt:message key="pages.menu.userlogout"  bundle="${rc}"/></a></li>
+                        </c:when>
+                        <c:otherwise>
+                            <li><a href="/welcome"><fmt:message key="pages.menu.main" bundle="${rc}"/></a></li>
+                            <li><a href="/user/getAll"><fmt:message key="pages.menu.allusers" bundle="${rc}"/></a></li>
+                            <li><a href="/user/login"><fmt:message key="pages.menu.userlogin" bundle="${rc}"/></a></li>
+                            <li><a href="/user/signup"><fmt:message key="pages.menu.userregister"  bundle="${rc}"/></a></li>
+                        </c:otherwise>
+                    </c:choose>
+                </ul>
+      </div>
+
+
+</jsp:root>

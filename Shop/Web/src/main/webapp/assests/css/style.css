@@ -1,0 +1,99 @@
+.error {
+    color: red;
+}
+
+.users {
+    position: relative;
+}
+
+
+.menu {
+    text-align: left;
+
+}
+
+.wrapper {
+    text-align: left;
+
+}
+.box {
+    display: inline-block; /*располагаем блоки в ряд по горизонтали*/
+  /*  margin-right: -0.25em; /*убираем правый отступ между блоками*/
+    margin-top:0px;
+    margin-right:0px;
+    margin-bottom:0px;
+    margin-left:20px;
+
+ }
+
+
+
+html {
+    height: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display: block;
+}
+body {
+    height: 100%;
+}
+
+
+
+.middle {
+    width: 100%;
+    padding: 0 0 40px;
+    position: relative;
+}
+.middle:after {
+    display: table;
+    clear: both;
+    content: '';
+}
+.container {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+}
+.content {
+    padding: 0 0 0 270px;
+}
+
+.left-sidebar {
+    float: left;
+    width: 250px;
+    margin-left: -100%;
+    position: relative;
+}
+
+.letter {
+    color: brown; /* Красный цвет символов */
+    font-size: 100%; /* Размер шрифта в процентах */
+    font-family: serif; /* Шрифт с засечками */
+    position: relative; /* Относительное позиционирование */
+    top: 1px; /* Сдвиг сверху */
+}
+
+.warning {
+    width: 295px;
+    text-align: center;
+    border: 1px solid gray;
+    background-color: #ffcf47;
+    padding: 10px;
+}
+
+.information {
+    width: 295px;
+    text-align: center;
+    border: 1px solid gray;
+    background-color: #24b0ff;
+    padding: 10px;
+}
+
+
+.button:hover {
+    background-color: #eeeeee
+}
+
+
+

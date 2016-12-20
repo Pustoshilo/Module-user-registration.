@@ -1,0 +1,23 @@
+<jsp:root xmlns="http://www.w3.org/1999/xhtml"
+          xmlns:jsp="http://java.sun.com/JSP/Page"
+          xmlns:c="http://java.sun.com/jsp/jstl/core"
+          xmlns:fmt="http://java.sun.com/jsp/jstl/fmt"
+          version="2.0" xmlns:C="http://java.sun.com/jsp/jstl/core">
+
+    <c:set value="ru_RU" var="locale"/>
+
+
+    <div style="float: right;">
+        <c:choose>
+        <c:when test="${sessionInfo.locale==locale}">
+            <a style="padding: 5px">RU</a>
+            <a href="/changeLocale?locale=en_US" style="padding: 5px">EN</a>
+        </c:when>
+            <c:otherwise>
+        <a href="/changeLocale?locale=ru_RU" style="padding: 5px">RU</a>
+        <a style="padding: 5px">EN</a>
+            </c:otherwise>
+        </c:choose>
+    </div>
+
+</jsp:root>

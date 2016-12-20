@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+    <definition name="default" template="/WEB-INF/view/layouts/default.jspx">
+        <put-attribute name="title" value="Welcome"/>
+        <put-attribute name="header" value="/WEB-INF/view/common/header.jspx"/>
+        <put-attribute name="body" value=""/>
+        <put-attribute name="footer" value="/WEB-INF/view/common/footer.jspx"/>
+    </definition>
+
+
+
+    <definition name="welcome" extends="default">
+        <put-attribute name="title" value="Welcome"/>
+        <put-attribute name="body" value="/WEB-INF/view/welcome/welcome.jspx"/>
+    </definition>
+
+
+    <definition name="user/main" extends="default">
+        <put-attribute name="title" value="Users"/>
+        <put-attribute name="body" value="/WEB-INF/view/user/main.jspx"/>
+    </definition>
+
+    <definition name="user/edit" extends="default">
+        <put-attribute name="title" value="Users"/>
+        <put-attribute name="body" value="/WEB-INF/view/user/edit.jspx"/>
+    </definition>
+
+    <definition name="user/signup" extends="default">
+        <put-attribute name="title" value="Users"/>
+        <put-attribute name="body" value="/WEB-INF/view/user/signup.jspx"/>
+    </definition>
+
+
+    <definition name="user/login" extends="default">
+        <put-attribute name="title" value="Users"/>
+        <put-attribute name="body" value="/WEB-INF/view/user/login.jspx"/>
+    </definition>
+
+<!--
+
+    <definition name="login" extends="default">
+        <put-attribute name="title" value="Login page"/>
+    </definition>
+-->
+
+
+    <definition name="jsp/error" extends="default">
+        <put-attribute name="title" value="Error"/>
+        <put-attribute name="body" value="/WEB-INF/view/error/error.jspx"/>
+    </definition>
+
+
+
+</tiles-definitions>
+
