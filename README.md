@@ -10,6 +10,6 @@ used 2-level-cache (ehcache).
 
 As the controller is used spring mvc, ideas manager - Tiles, uses automatic form validation.
 
-UI-interface is done in a simple, solely for demonstration. Use JSTL, SpEL. Implemented pagination.
+UI-interface is done in a simple, solely for demonstration. Use JSTL, SpEL. Implemented pagination and i18n.
 
 Database: MySQL, see the dump file.
